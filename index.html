@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Unidades</h1>
+        <div class="converter">
+            <label for="unit-type">Tipo de Unidade:</label>
+            <select id="unit-type">
+                <option value="mass">Massa</option>
+                <option value="length">Comprimento</option>
+                <option value="area">Área</option>
+                <option value="volume">Volume</option>
+                <option value="pressure">Pressão</option>
+                <option value="temperature">Temperatura</option>
+            </select>
+
+            <label for="input-value">Valor:</label>
+            <input type="number" id="input-value" placeholder="Insira o valor">
+
+            <label for="input-unit">De:</label>
+            <select id="input-unit">
+                <!-- As opções serão preenchidas dinamicamente pelo JavaScript -->
+            </select>
+
+            <label for="output-unit">Para:</label>
+            <select id="output-unit">
+                <!-- As opções serão preenchidas dinamicamente pelo JavaScript -->
+            </select>
+
+            <button onclick="convert()">Converter</button>
+
+            <h2 id="result">Resultado: </h2>
+        </div>
+
+        <div class="advertisement">
+            <h3>Publicidade</h3>
+            <p>Aqui pode estar o seu anúncio!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
